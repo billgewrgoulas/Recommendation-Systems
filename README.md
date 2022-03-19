@@ -24,16 +24,22 @@ To achieve this we will use <b>Cosine similarity</b> which measures the angle be
 
 To test the accuracy of each algorithm we will use the <b>Root Mean Squared Error</b>. In addition, we will implement two simple algorithms that work with the means and will act as baselines.
 
+<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p2.png'>
+
 ## Step 4 - Algorithms
 
 ### User Collaborative Filtering - Main Flow
+
+<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p3.png'>
 
  * Get vector of u, and find indices of users that rated j
  * Compute similarities between users that rated j and user u
  * Keep k most similar users and their scores
  * Predict the score using the above formula
 
-### Content Collaborative Filtering - Main Flow (same as UCF but it works with the joke vectors)
+### Item Collaborative Filtering - Main Flow (same as UCF but it works with the joke vectors)
+
+<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p4.png'>
 
  * Get vector of J, and find indices of jokes that were rated by user u
  * Compute similarities between jokes that were rated by u and joke j
@@ -44,6 +50,8 @@ To test the accuracy of each algorithm we will use the <b>Root Mean Squared Erro
 ### Improved UCF
 
  * In this case we will predict the deviations from the mean, and use the modified formula:
+
+   <img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p5.png'>
  
 ### Singular Value Decomposition
 
@@ -73,5 +81,3 @@ In this case, we will combine Kmeans with some of the previous algorithms. We wi
 
  * Find cluster of j and all jokes in the cluster
  * Return the mean of the user in the cluster.
-
-
