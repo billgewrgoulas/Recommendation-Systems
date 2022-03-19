@@ -1,7 +1,7 @@
 
 ## Introduction
 
-The purpose of this project is to implement various algorithms to predict the "rating" a user would give to a joke they haven't already rated, using the joke data set from Kaggle. The main methods that will be featured will be <b>Collaborating Filtering</b>, <b>Singular Value Decomposition</b> and some <b>Cluster Based</b> algorithms using Kmeans.
+The purpose of this project is to implement various algorithms to predict the "rating" a user would give to a joke they haven't already rated, using the joke data set from Kaggle. The main methods that will be featured will be <b>Collaborative Filtering</b>, <b>Singular Value Decomposition</b> and some <b>Cluster Based</b> algorithms using Kmeans.
 
 ## Step 1 - Pre-Processing
 
@@ -26,7 +26,7 @@ To test the accuracy of each algorithm we will use the <b>Root Mean Squared Erro
 
 <img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p2.png'>
 
-## Step 4 - Algorithms
+## Collaborative Filtering Methods
 
 ### User Collaborative Filtering - Main Flow
 
@@ -53,7 +53,7 @@ To test the accuracy of each algorithm we will use the <b>Root Mean Squared Erro
 
    <img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p5.png'>
  
-### Singular Value Decomposition
+## Singular Value Decomposition
 
  * Apply SVD and keep the k largest singular values in order to produce the prediction matrix.
 
