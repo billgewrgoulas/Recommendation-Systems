@@ -10,6 +10,7 @@ Initially, our data will look something like this:
 <img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p1.png'>
 
 In order to apply the algorithms, we will have to create the rating matrix. Each row will represent the rating vector for each user and every one of these vectors will have as many axes as the number of jokes. Similary each column will represent the rating vector of each joke. Obviously, this will result in a matrix with many blank values since not all users have rated every joke. In this case, we will fill the NaN values with 0, so we can use sparse matrices for efficiency. In addition, we will use the ids of the jokes and users as indices for convenience.
+Lastly to test the algorithms we will keep the first 10000 rows of the initial matrix as test data and use the rest as train data.
 
 <img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p6.png'>
 
