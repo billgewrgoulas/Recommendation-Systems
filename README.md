@@ -7,15 +7,18 @@ The purpose of this project is to implement various algorithms to predict the "r
 
 Initially, our data will look something like this:
 
-In order to apply the algorithms, we will have to create the rating matrix. Each row will represent the rating vector for each user and every one of these vectors will have as many axes as the number of jokes. Similary each column will represent the rating vector of each joke. Obviously, this will results in a matrix with many blank values since not all users have rated every joke. In this case, we will fill the NaN values with 0, so we can use sparse matrices for efficiency. In addition, we will use the ids of the jokes and users as indices for convenience.
+<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p1.png'>
 
-<img src='https://github.com/billgewrgoulas/-Hypothesis-Testing-on-37-Seasons-of-NBA/blob/main/ball.jpg'>
+In order to apply the algorithms, we will have to create the rating matrix. Each row will represent the rating vector for each user and every one of these vectors will have as many axes as the number of jokes. Similary each column will represent the rating vector of each joke. Obviously, this will result in a matrix with many blank values since not all users have rated every joke. In this case, we will fill the NaN values with 0, so we can use sparse matrices for efficiency. In addition, we will use the ids of the jokes and users as indices for convenience.
 
+<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p6.png'>
 
 ## Step 2 - Defining Similarity
 
 Now that we have assigned a 1xN vector to each user we need to find a way to determine how similar two users are. 
 To achieve this we will use <b>Cosine similarity</b> which measures the angle between two vectors.
+
+<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p7.jpeg'>
 
 ## Step 3 - Evaluation
 
