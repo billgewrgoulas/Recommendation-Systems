@@ -18,7 +18,7 @@ In order to apply the algorithms, we will have to create the rating matrix. Each
 Now that we have assigned a 1xN vector to each user we need to find a way to determine how similar two users are. 
 To achieve this we will use <b>Cosine similarity</b> which measures the angle between two vectors.
 
-<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p7.jpeg'>
+<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p7.png'>
 
 ## Step 3 - Evaluation
 
