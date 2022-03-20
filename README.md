@@ -1,7 +1,7 @@
 
 ## Introduction
 
-The purpose of this project is to implement various algorithms to predict the "rating" a user would give to a joke they haven't already rated, using the joke data set from Kaggle. The main methods that will be featured will be <b>Collaborative Filtering</b>, <b>Singular Value Decomposition</b> and some <b>Cluster Based</b> algorithms using Kmeans.
+The purpose of this project is to implement various algorithms to predict the "rating" a user would give to a joke they haven't already rated, using the joke data set from Kaggle. The main methods that will be featured are <b>Collaborative Filtering</b>, <b>Singular Value Decomposition</b> and some <b>Cluster Based</b> algorithms using Kmeans.
 
 ## Step 1 - Pre-Processing
 
