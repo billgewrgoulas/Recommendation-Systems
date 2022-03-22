@@ -30,7 +30,7 @@ To test the accuracy of each algorithm we will use the <b>Root Mean Squared Erro
 
 ## Collaborative Filtering Methods
 
-### User Collaborative Filtering - Main Flow
+### User Collaborative Filtering
 
 <img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p3.png'>
 
@@ -39,7 +39,7 @@ To test the accuracy of each algorithm we will use the <b>Root Mean Squared Erro
  * Keep k most similar users and their scores
  * Predict the score using the above formula
 
-### Item Collaborative Filtering - Main Flow (same as UCF but it works with the joke vectors)
+### Item Collaborative Filtering - (same as UCF but it works with the joke vectors)
 
 <img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p4.png'>
 
@@ -51,7 +51,7 @@ To test the accuracy of each algorithm we will use the <b>Root Mean Squared Erro
 
 ### Improved UCF
 
- * In this case we will predict the deviations from the mean, and use the modified formula:
+ * In this case we will predict the deviations from the mean and use the pearson correlation coefficient for the similarity.
 
    <img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p5.png'>
  
@@ -63,13 +63,13 @@ To test the accuracy of each algorithm we will use the <b>Root Mean Squared Erro
 
 In this case, we will combine Kmeans with some of the previous algorithms. We will apply Kmeans on the rating matrix using the user rating vectors for the clustering, but first, we have to determine the right number of clusters. To achieve this we will create the combined Silhouette Coefficient - SSE plot to find the best number of clusters.
 
-### Cluster-Based JA (CB-JA) - Main Flow
+### Cluster-Based JA (CB-JA)
 
  * Find cluster of u and users in the cluster
  * Get ratings of j in the cluster
  * Return mean in the cluster or mean of j
 
-### Cluster-Based UCF (CB-UCF) - Main Flow
+### Cluster-Based UCF (CB-UCF)
 
  The idea here is to run UCF on the vectors in the cluster of the user u.
 
@@ -77,8 +77,7 @@ In this case, we will combine Kmeans with some of the previous algorithms. We wi
  * Get the sparse submatrix that contains only the rating vectors of the users in the cluster.
  * Run UCF on the submatrix
 
-### Cluster-Based UA (CB-UA) - Main Flow
-
+### Cluster-Based UA (CB-UA)
  For this method we will use Kmeans to cluster the jokes using their text. To achieve this we will assign a vector to each joke using <b>TF-IDF Vectorizer</b>
 
  * Find cluster of j and all jokes in the cluster
