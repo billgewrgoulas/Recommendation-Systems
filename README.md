@@ -20,19 +20,23 @@ Lastly to test the algorithms we will keep the first 10000 rows of the initial m
 Now that we have assigned a 1xN vector to each user we need to find a way to determine how similar two users are. 
 To achieve this we will use <b>Cosine similarity</b> which measures the angle between two vectors.
 
-<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p7.png'>
+<p align="center"><img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p7.png'></p>
+
+
 
 ## Step 3 - Evaluation
 
 To test the accuracy of each algorithm we will use the <b>Root Mean Squared Error</b>. In addition, we will implement two simple algorithms that work with the means and will act as baselines.
 
-<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p2.png'>
+<p align="center"><img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p2.png'></p>
+
 
 ## Collaborative Filtering Methods
 
 ### User Collaborative Filtering
 
-<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p3.png'>
+<p align="center"><img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p3.png'></p>
+
 
  * Get vector of u, and find indices of users that rated j
  * Compute similarities between users that rated j and user u
@@ -41,7 +45,7 @@ To test the accuracy of each algorithm we will use the <b>Root Mean Squared Erro
 
 ### Item Collaborative Filtering - (same as UCF but it works with the joke vectors)
 
-<img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p4.png'>
+<p align="center"><img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p4.png'></p>
 
  * Get vector of J, and find indices of jokes that were rated by user u
  * Compute similarities between jokes that were rated by u and joke j
@@ -53,8 +57,8 @@ To test the accuracy of each algorithm we will use the <b>Root Mean Squared Erro
 
  * In this case we will predict the deviations from the mean and use the pearson correlation coefficient for the similarity.
 
-   <img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p5.png'>
- 
+<p align="center"><img src='https://github.com/billgewrgoulas/Recommendation-Systems/blob/main/gif/p5.png'></p>
+
 ## Singular Value Decomposition
 
  * Apply SVD and keep the k largest singular values in order to produce the prediction matrix.
